@@ -1,44 +1,68 @@
-# EH-Hub Bot
+# 🌟 EH-Hub Bot: The Ultimate Community Management Suite
 
 ## 🤖 Overview
 
-The EH-Hub Bot is a comprehensive, multi-purpose utility and moderation bot designed for **Discord** communities. It aims to centralize essential administrative, informational, and fun features, making community management easier and enhancing user experience.
+The EH-Hub Bot is a sophisticated, multi-purpose administrative and engagement solution specifically engineered for **Discord** communities. Designed for high performance and modularity, EH-Hub streamlines essential management tasks and enhances user interaction, providing a centralized platform for operational excellence.
 
-This repository contains the full source code, setup instructions, and configuration details for deploying and maintaining your own instance of EH-Hub.
+---
 
-## ✨ Features
+## 🔗 Quick Access
 
-EH-Hub is designed to be highly modular and extensible. Key features include:
+| **Platform** | **Link** |
+| :--- | :--- |
+| **Invite Bot** | [Add EH-Hub to your Server](https://discord.com/discovery/applications/1349441086275195021) |
+| **Support Server** | [Join Our Community](https:/discord.gg/fZHRF3xcJe) |
+
+---
+
+## ✨ Core Functionality
+
+EH-Hub is built to be robust and highly adaptable, focusing on critical community needs:
 
 ### 🛡️ Moderation & Administration
 
-* **Logging:** Detailed logging of moderator actions, message edits, and user joins/leaves.
-* **Automated Rules:** Simple filtering for spam, unwanted links, or prohibited words.
-* **Utility Commands:** Tools for server information, user lookups, and channel management.
+* **Audit Logging:** Comprehensive, detailed logging of all moderator actions, message activities, and user status changes.
+* **Automated Content Filtering:** Proactive mechanisms for instantly filtering spam, unauthorized links, and prohibited language.
+* **Management Utilities:** Efficient tools for server information retrieval, detailed user lookups, and channel administration.
 
-### ⚙️ Utility & Information
+### 🎲 Engagement & Customization
 
-* **Informational Commands:** Commands to fetch real-time data (e.g., weather, crypto prices, etc.).
-* **Reminders:** Users can set timed reminders for themselves or the channel.
+* **Interactive Games:** Integrated mini-games designed to foster community engagement and boost daily activity.
+* **Custom Responses:** Define fun, tailored responses triggered by specific keywords or phrases to enrich chat flow.
 
-### 🎲 Fun & Engagement
+---
 
-* **Mini-Games:** Simple, interactive chat games to boost community engagement.
-* **Custom Responses:** Predefined, fun responses triggered by specific keywords or phrases.
+## 🚨 EH HUB BOT COMMANDS (Emergency Hamburg Integration)
 
-## 🚀 Getting Started
+EH-Hub provides specialized slash commands for communities centered around the Emergency Hamburg environment (Roblox):
 
-Follow these steps to set up and run your own instance of the EH-Hub Bot.
+| Command | Description |
+| :--- | :--- |
+| `/gangs` | Check and view the statistics for the best Emergency Hamburg (EH) gangs. |
+| `/emergencysetup` | Initiate a critical call button setup. Pressing the button immediately notifies in-game members when cop/med assistance or specific crim roles are urgently needed, sending vital help information. |
+| `/ehgroup` | Provides a direct link and information regarding the official Emergency Hamburg Roblox group. |
+
+---
+
+## 🚀 Deployment & Configuration
+
+To deploy your own secure instance of EH-Hub, follow the critical steps below. This bot requires Node.js and a Discord Bot Token.
 
 ### 1. Prerequisites
 
-You will need the following installed on your system:
+* **Node.js (LTS):** Required runtime environment.
+* **Bot Token:** Must be obtained from the Discord Developer Portal.
 
-* **Node.js** (LTS recommended)
-* A Bot Token (e.g., from the Discord Developer Portal)
+### 2. Configuration Setup
 
-### 2. Clone the Repository
+The bot secures configuration via environment variables.
+
+1.  **Template File:** Utilize the provided `.env.example` file as a reference.
+2.  **Environment File:** Create a file named `.env` in the root directory.
+3.  **Fill Values:** Populate the file with your specific credentials:
 
 ```bash
-git clone [https://github.com/xGGmasterboy/EH-Hub.git](https://github.com/xGGmasterboy/EH-Hub.git)
-cd EH-Hub
+# Example content of your actual .env file
+BOT_TOKEN=YOUR_DISCORD_BOT_TOKEN_HERE
+BOT_PREFIX=!
+OWNER_ID=YOUR_USER_ID
