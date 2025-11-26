@@ -1,8 +1,10 @@
 # 🌟 EH-Hub Bot: The Ultimate Community Management Suite
 
-## 🤖 Overview
+## 🤖 Overview: Enterprise-Grade Discord Management
 
-The EH-Hub Bot is a sophisticated, multi-purpose administrative and engagement solution specifically engineered for **Discord** communities. Designed for high performance and modularity, EH-Hub streamlines essential management tasks and enhances user interaction, providing a centralized platform for operational excellence.
+The **EH-Hub Bot** represents a comprehensive, high-performance solution for modern Discord communities. It is **entirely engineered using native JavaScript (Node.js)**, ensuring speed and reliability.
+
+This bot is professionally **hosted on a Virtual Private Server (VPS) 24/7**, guaranteeing maximum uptime and continuous service delivery. EH-Hub provides sophisticated administrative, engagement, and specialized command features designed to optimize community management and interaction, making it the central pillar of your Discord server's operations.
 
 ---
 
@@ -55,7 +57,7 @@ We are actively working on advanced features to further enhance management and i
 
 ## 🚀 Deployment & Configuration: Launching Your Instance
 
-EH-Hub is built entirely on **Node.js** (JavaScript), offering robust performance and high scalability. Follow these critical steps to initialize and secure your dedicated bot instance.
+EH-Hub is built entirely on **Node.js** (JavaScript). Follow these critical steps to initialize and secure your dedicated bot instance.
 
 ### 1. System Prerequisites
 
@@ -73,6 +75,8 @@ The bot relies exclusively on environment variables for security and operational
 3.  **Populate Credentials:** Fill the file with your specific, sensitive data:
 
 ```bash
-# Example content of your actual .env file
-BOT_TOKEN=YOUR_DISCORD_BOT_TOKEN_HERE
-OWNER_ID=YOUR_USER_ID
+# BOT IDENTIFICATION
+BOT_ID=896682505279770727
+
+# SUPPORT/INVITE LINKS (For internal embedding)
+BOT_SUPPORT_INVITE=discord.gg/fZHRF3xcJe
