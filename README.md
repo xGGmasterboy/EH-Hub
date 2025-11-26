@@ -34,35 +34,45 @@ EH-Hub is built to be robust and highly adaptable, focusing on critical communit
 
 ## 🚨 EH HUB BOT COMMANDS (Emergency Hamburg Integration)
 
-EH-Hub provides specialized slash commands for communities centered around the Emergency Hamburg environment (Roblox):
+EH-Hub is optimized for the Emergency Hamburg Roblox environment, featuring powerful slash commands (`/`) to bridge in-game data with Discord functionality:
 
 | Command | Description |
 | :--- | :--- |
-| `/gangs` | Check and view the statistics for the best Emergency Hamburg (EH) gangs. |
-| `/emergencysetup` | Initiate a critical call button setup. Pressing the button immediately notifies in-game members when cop/med assistance or specific crim roles are urgently needed, sending vital help information. |
-| `/ehgroup` | Provides a direct link and information regarding the official Emergency Hamburg Roblox group. |
+| `/gangs` | **Gang Leaderboard:** Instantly check and display real-time statistics for top-performing EH gangs. |
+| `/emergencysetup` | **Critical Callout:** Sets up a dedicated reaction button for immediate mobilization. Pressing it notifies in-game members (cop/med/crim) with essential details for urgent support. |
+| `/ehgroup` | **Group Info:** Provides a direct link and informational details for the official Emergency Hamburg Roblox group. |
+| `/userinfo` | **Roblox Player Lookup:** Retrieves detailed Roblox user information, including their join date for the Emergency Hamburg experience. |
+| `/ehtraining` | **Training Tracker:** Command under development. Designed to manage and track member training progress within the community. |
+
+### 🔜 Upcoming Features (Development Pipeline)
+
+We are actively working on advanced features to further enhance management and integrity:
+
+* **`/activity_check`:** An automated feature to monitor and report on user activity within the server.
+* **Auto-Prefix Enforcement:** A critical security feature that monitors and notifies server administrators if a designated gang member removes their required gang prefix (e.g., `EH_Roblox`). This system will be deployed soon.
 
 ---
 
-## 🚀 Deployment & Configuration
+## 🚀 Deployment & Configuration: Launching Your Instance
 
-To deploy your own secure instance of EH-Hub, follow the critical steps below. This bot requires Node.js and a Discord Bot Token.
+EH-Hub is built entirely on **Node.js** (JavaScript), offering robust performance and high scalability. Follow these critical steps to initialize and secure your dedicated bot instance.
 
-### 1. Prerequisites
+### 1. System Prerequisites
 
-* **Node.js (LTS):** Required runtime environment.
-* **Bot Token:** Must be obtained from the Discord Developer Portal.
+Ensure the following foundational components are installed on your deployment server:
 
-### 2. Configuration Setup
+* **Node.js (LTS):** The latest Long-Term Support version is mandatory.
+* **Discord Bot Token:** A unique authorization token secured from the Discord Developer Portal.
 
-The bot secures configuration via environment variables.
+### 2. Critical Configuration Setup
 
-1.  **Template File:** Utilize the provided `.env.example` file as a reference.
-2.  **Environment File:** Create a file named `.env` in the root directory.
-3.  **Fill Values:** Populate the file with your specific credentials:
+The bot relies exclusively on environment variables for security and operational parameters.
+
+1.  **Template File:** Reference the `.env.example` template for required variables.
+2.  **Secure File Creation:** Create a file named `.env` in the project's root directory.
+3.  **Populate Credentials:** Fill the file with your specific, sensitive data:
 
 ```bash
 # Example content of your actual .env file
 BOT_TOKEN=YOUR_DISCORD_BOT_TOKEN_HERE
-BOT_PREFIX=!
 OWNER_ID=YOUR_USER_ID
